@@ -175,6 +175,7 @@
 - (UIButton *)confirmButton {
     if (!_confirmButton) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
         [self addSubview:button];
         _confirmButton = button;
     }
@@ -184,6 +185,7 @@
 - (UIButton *)cancelButton {
     if (!_cancelButton) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
         [self addSubview:button];
         _cancelButton = button;
     }
